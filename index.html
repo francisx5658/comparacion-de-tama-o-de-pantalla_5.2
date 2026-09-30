@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Actividad_5.css">
+    <title>Actividad 4</title>
+    <link rel="icon" type="image/svg+xml" href="noelizz.svg">
+  <link rel="alternate icon" href="favicon.ico">
+</head>
+</head>
+<body>
+    <div>
+        <h1>Actividad 4</h1>
+    </div>
+
+    <br>
+
+    <div>
+<h1> Ingrese su numero 1</h1>
+<input id="input1" type="number">
+<button onclick="
+let value1 = document.querySelector('#input1').value
+
+if (value1 < 576){
+    document.querySelector('#holajaja').innerHTML = 'El tamaño de la pantalla es xs'
+}
+else if(value1 < 768){
+    document.querySelector('#holajaja').innerHTML = 'El tamaño de la pantalla es sm'
+}
+else if(value1 < 962){
+    document.querySelector('#holajaja').innerHTML = 'El tamaño de la pantalla es md'
+}
+else if(value1 < 1199){
+    document.querySelector('#holajaja').innerHTML = 'El tamaño de la pantalla es xl'
+}
+else{
+    document.querySelector('#holajaja').innerHTML = 'El tamaño de la pantalla es xxl'
+}
+
+
+"> Verificar </button>
+<h1 id="holajaja">Verificacion </h1>
+    </div>
+
+<footer><img src="noelizz.svg" alt="footer logo" width="40%"></footer>
+</body>
+</html>
